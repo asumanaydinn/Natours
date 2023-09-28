@@ -1,0 +1,29 @@
+.heading-primary {
+  color: $color_2;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 3.5rem;
+  animation: moveInLeft 1s ease-in-out;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 1s ease-in-out;
+}
+
+body {
+  font-family: $font-family_1;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color_1;
+  box-sizing: border-box;
+}
