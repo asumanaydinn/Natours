@@ -1,0 +1,72 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+      outline: 1.5rem solid $color-primary;
+      z-index: 20;
+    }
+  }
+  &__text {
+    width: 45%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    &--p1 {
+      left: 0;
+      top: 15%;
+    }
+    &--p2 {
+      right: 0;
+      top: 40%;
+    }
+    &--p3 {
+      left: 7%;
+      top: 70%;
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+    text-align: right;
+    width: 80%;
+  }
+  &__text {
+    font-size: $default-font-size;
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    text-align: right;
+    width: 80%;
+  }
+}
